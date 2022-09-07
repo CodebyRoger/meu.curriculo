@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.receptor
+{
+    position: relative;
+    width: 1000%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.receptor .lesquerdo
+{
+    position: relative;
+    background: #118bc4;
+    padding: 20px;
+}
+.perfil
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255,255,255,0.2)
+}
+.perfil .imgR
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.perfil .imgR img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:200%;
+    object-fit: cover;
+}
+.perfil h2
+{
+    color:#fff;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.info
+{
+    padding-top: 40px;
+}
+.titulo
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.info ul
+{
+    position: relative;
+}
+.info ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.info ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #03a9f4;
+}
+.info ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+.info.educacao li
+{
+    margin-bottom: 20px;
+}
+.info.educacao h4
+{
+    color: #fff;
+    font-weight: 600;
+}
+.info.educacao h5
+{
+    color: #fff;
+    font-weight: 500;
+}
+.info.educacao h6
+{
+    color: rgb(0, 2, 5);
+    font-weight: 00;
+}
+.receptor .ldireito
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.sobre
+{
+    margin-bottom: 50px;
+}
+.sobre:last-child
+{
+    margin-bottom: o;
+}
+.titulo1
+{
+    color: #118bc4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10 px;
+}
+p
+{
+    color: #333;
+}
+.sobre .caixa
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.sobre .caixa .ano
+{
+    min-width: 150px;
+}
+.sobre .caixa .ano h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.texto0 h4
+{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+.tecnologia .caixa1
+{
+    position: relative;
+    width: 100%;
+    margin: 12px 0;
+    align-items: center;
+}
+.tecnologia .caixa1 p
+{
+    text-transform: uppercase;
+    font-weight: 500;
+}    
+.idiom .caixa1 p
+{
+    text-transform: uppercase;
+    font-weight: 500;
+} 
+
+@media (max-width: 1000px)
+{
+    .receptor
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr)
+    }
+    .idiom p
+    {
+        grid-template-columns: repeat(2,1fr)
+    }
+}
+
+@media (max-width: 600px)
+{
+    .sobre .caixa
+    {
+        flex-direction: column;
+    }
+    .sobre .caixa .ano 
+    {
+        margin-bottom: 5px;
+    }
+}
